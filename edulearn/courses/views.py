@@ -14,7 +14,7 @@ class OwnerMixin(object):
 class OwnerEditMixin(object):
     def form_valid(self, form):
         form.instance.owner = self.request.user
-        return super().from_valid(form)
+        return super().form_valid(form)
 
 
 class OwnerCourseMixin(OwnerMixin, LoginRequiredMixin, PermissionRequiredMixin):
