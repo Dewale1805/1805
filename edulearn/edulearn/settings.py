@@ -153,7 +153,7 @@ REST_FRAMEWORK = {
 
 ASGI_APPLICATION = 'edulearn.routing.application'
 
-CHANNELS_LAYERS = {
+CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
